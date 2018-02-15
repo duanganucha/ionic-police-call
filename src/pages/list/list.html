@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title>รวมเบอร์ ตำรวจช่าง</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <img src="https://uppicimg.com/file/cvEOLdp8.png">
+  <ion-list>
+    <ion-item *ngFor="let data of datas" (click)="clickEventHandler(data)">
+      <ion-avatar item-start>
+        <img src="http://wfarm3.dataknet.com/static/resources/icons/set114/a9139b81.png">
+      </ion-avatar>
+
+      <h2>{{ data.B }} ({{data.A}})</h2>
+      <p>{{ data.C}}</p>
+
+      <ion-icon name="call" item-right></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>

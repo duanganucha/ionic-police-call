@@ -1,0 +1,34 @@
+<!--
+  Generated template for the ListDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title>รายละเอียด เบอร์โทร</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-card style="text-align:center" >
+        <img style="height: 50%; width: 50%; "  src="http://wfarm3.dataknet.com/static/resources/icons/set114/a9139b81.png"/>
+        <ion-card-content>
+          <ion-card-title>
+           <button ion-button color="light"> <b>บริเวณจังหวัด {{ data.B}}</b></button>
+            </ion-card-title>
+             <button ion-button color="light">หมายเลขโทร. {{ data.C }}</button>
+        </ion-card-content>
+      </ion-card>
+  
+  <button ion-button full large icon-left (click)="Call()"> 
+    <ion-icon name="call" ></ion-icon> 
+    โทร - Call
+  </button>
+
+
+</ion-content>
